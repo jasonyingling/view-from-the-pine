@@ -20,3 +20,7 @@ wp-content/cache/
 wp-content/backups/
 sitemap.xml
 sitemap.xml.gz
+_private
+_vti_*
+!_vti_inf.html
+cgi_bin

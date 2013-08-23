@@ -1,0 +1,943 @@
+/******************************************************************
+Theme Name: Birdslandia
+Theme URI: http://www.jyingling.com
+Description: This theme was built using Bones and Twitter Bootstrap.
+Author: Jason Yingling
+Author URI: http://jyingling.com
+Version: 1.0
+Tags: flexble-width, translation-ready, microformats, rtl-language-support
+
+License: WTFPL
+License URI: http://sam.zoy.org/wtfpl/
+Are You Serious? Yes.
+
+******************************************************************/
+ 
+/* Push Wordpress Admin Bar down when logged in as Admin */
+
+/*
+body.admin-bar .navbar {
+	margin-top: 28px;
+}
+*/
+
+/* End Push Wordpress Admin Bar when logged in as Admin */
+
+html, body{
+	height: 100%;
+	color: #363636;
+}
+
+#wrap {
+	min-height: 100%;
+}
+
+#main {
+	overflow: hidden;
+}
+
+body {
+	font-family: 'Roboto', Helvetica, arial, sans-serif;
+	font-size: 1em;
+	line-height: 22px;
+	background: #f6f6f6;
+}
+
+header {
+	background: #262729; /* Old browsers */
+}
+
+/* Masthead */
+
+.masthead {
+	width: 100%;
+	height: auto;
+	position: relative;
+	border-bottom: 1px solid #000;
+	text-shadow: 0 1px 3px rgba(0, 0, 0, .4), 0 0 30px rgba(0, 0, 0, .075);
+}
+
+/* Logo */
+
+.logo {
+	/* margin-top: 23px; */
+	width: 50%;
+	padding: 20px 0px;
+	float: left;
+}
+
+.description {
+	
+	position: absolute;
+	width: 48%;
+	height: auto;
+	bottom: 17px;
+	right: 0px;
+	padding-right: 2px;
+	text-align: right;
+	line-height: 16px;
+	color: #a4a4a4;
+	font-weight: 300;
+}
+
+.logo img {
+	width: 100%;
+	max-width: 237px;
+}
+.logo h1 {
+	margin: 0;
+	line-height: 60px;
+}
+
+.logo h1 a {
+	color: #fff;
+}
+
+/* Navbar */
+.navbar {
+	position: relative;
+	z-index: 1;
+	font-family: 'Roboto', Helvetica, arial, sans-serif;
+}
+
+.navbar-inverse .navbar-inner {
+	border-top: 1px solid #181818;
+	border-bottom: 1px solid #181818;
+	background: #1b1c1e; /* Old browsers */
+}
+
+.navbar .nav > li {
+	height: 42px;
+	line-height: 22px;
+	font-weight: 300;
+}
+
+.navbar .nav > li > a {
+	color: #919191;
+	padding: 10px 15px 10px;
+}
+
+.navbar .nav > li > a:hover {
+	color: #fff;
+}
+
+.navbar .brand {
+	padding: 7px 20px 7px 7px;
+	line-height: 22px;
+}
+
+.navbar .current_page_item, .navbar .current-menu-item {
+	color: #919191;
+	text-decoration: none;
+	background-color: #262729;
+	-webkit-box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
+	-moz-box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
+	box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.125);
+}
+
+.navbar-inverse .brand, .navbar-inverse .nav > li > a.brand {
+	display: none;
+}
+
+.nav-collapse .nav > li > a, .nav-collapse .dropdown-menu a {
+	font-weight: 300;
+}
+
+/* Social Bar - under masthead */
+
+.social-bar {
+	height: 30px;
+	background: #eeeeee;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #e6e6e6;
+	display: none;
+}
+
+.social-bar > .row-fluid > .span12 {
+	text-align: center;
+}
+
+.social-bar > .row-fluid > .span12 > ul.post-social {
+	display: inline-block;
+	list-style-type: none;
+	margin: 0;
+}
+
+.social-bar > .row-fluid > .span12 > ul.post-social li {
+	float: left;
+	width: 90px;
+	margin-right: 5px;
+	padding-top: 5px;
+}
+
+/* Post Content - Home */
+
+.banner {
+	width: 100%;
+	height: 286px;
+	background-color: #4b0114;
+	background-image: url('images/pine-logo-bg.png');
+	background-position: center center;
+	background-repeat: no-repeat;
+	/* background-size: 100% auto; */
+	position: relative;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #bababa;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #000;
+}
+	.banner.category-cardinals {
+		background-color: #ce1141;
+	}
+	
+	.banner.category-rams {
+		background-color: #95774D;
+	}
+	
+	.banner.category-blues {
+		background-color: #0b318a;
+	}
+	.banner.category-nachoporn {
+		background-color: #ecb500;
+	}
+	.banner.category-missouri-state {
+		background-color: #5a0007;
+	}
+
+	/*
+.banner.category-cardinals {
+		background: url('images/home-banner.jpg') center 0px no-repeat;
+		background-size: cover;
+	}
+	
+	.banner.category-rams {
+		background: url('images/rams-banner.jpg') center 0px no-repeat;
+		background-size: cover;
+	}
+	
+	.banner.category-blues {
+		background: url('images/blues-banner.jpg') center 0px no-repeat;
+		background-size: cover;
+	}
+*/
+	
+
+.banner-overlap {
+	margin-top: -50px;
+}
+
+body.single .banner-overlap {
+	margin-top: -230px;
+}
+body.archive .banner-overlap {
+	margin-top: -250px;
+}
+body.search .banner-overlap {
+	margin-top: -250px;
+}
+
+.content-wrap {
+	position: relative;
+	z-index: 1;
+}
+
+.post-area {
+	background: #fff;
+	border: 1px solid #dedede;
+	border-left-width: 0px;
+	margin-bottom: 20px;
+}
+
+.page {
+	margin-bottom: 20px;
+	
+}
+
+.post-area .post-content {
+	border-left-width:5px;
+	border-left-style: solid;
+	border-left-color: #000;
+	margin-top: -1px;
+	margin-bottom: -1px;
+	position: relative;
+}
+
+.featured-post {
+	height: 200px;
+	margin: 19px 0px;
+}
+
+.post-area.featured-post .post-content {
+	height: 100%;
+	padding: 1px 0px;
+}
+
+.post-content .post-wrap {
+	padding: 20px 25px 0px;
+}
+
+.post-area.featured-post .post-content .post-wrap {
+	padding: 5px 25px 0px;
+}
+
+.post-content .post-wrap-lower {
+	padding: 10px 25px 0px;
+	position: relative;
+}
+
+	.post-area .post-content.category-cardinals {
+		border-left-color: #ce1141;
+	}
+	.post-area .post-content.category-blues {
+		border-left-color: #0b318a;
+	}
+	.post-area .post-content.category-rams {
+		border-left-color: #95774D;
+	}
+	.post-area .post-content.category-nachoporn {
+		border-left-color: #ecb500;
+	}
+	.post-area .post-content.category-missouri-state {
+		border-left-color: #5a0007;
+	}
+	.post-area .post-content.category-america {
+		border-style: solid;
+		border-width: 0px 0px 0px 5px;
+		-moz-border-image: url(images/america.png) 0 0 0 5 repeat;
+		-webkit-border-image: url(images/america.png) 0 0 0 5 repeat;
+		-o-border-image: url(images/america.png) 0 0 0 5 repeat;
+		border-image: url(images/america.png) 0 0 0 5 fill repeat;
+	}
+
+.post-content .category {
+	text-transform: uppercase;
+	float: left;
+}
+
+.post-content .category a {
+	color: #000;
+	font-weight: 500;
+}
+
+	.post-content .category.category-cardinals a {
+		color: #ce1141;
+	}
+	.post-content .category.category-blues a {
+		color: #0b318a;
+	}
+	.post-content .category.category-rams a {
+		color: #95774D;
+	}
+	.post-content .category.category-nachoporn a {
+		color: #ecb500;
+	}
+	.post-content .category.category-missouri-state a {
+		color: #5a0007;
+	}
+	
+.post-content .category a:hover {
+	color: #ccc;
+}
+	
+.post-content .comment-total {
+	float: right;
+	font-size: 12px;
+	color: #a2a2a2;
+}
+
+.post-content .thumb img {
+	width: 100%;
+}
+
+.post-content > h2, .post-title {
+	margin: 0px;
+	clear: both;
+	font-size: 1.9em;
+	line-height: 1.2em;
+}
+
+.featured-post h2.post-title {
+	font-size: 1.2em;
+	line-height: 1.1em;
+}
+
+.row-fluid a, .post-title a, .post-title {
+	color: #363636;
+	font-weight: normal;
+}
+
+.row-fluid a:hover {
+	color: #ccc;
+	text-decoration: none;
+}
+
+.byline_contain {
+	line-height:15px;
+	font-size: 11px;
+	margin-bottom: 10px;
+	color: #a2a2a2;
+	font-weight: normal;
+}
+
+.byline_contain a {
+	color: #a2a2a2;
+}
+
+.main-content {
+	margin-bottom: 5px;
+	line-height: 30px;
+}
+
+.main-content a {
+	color: #a4a4a4;
+	/* text-decoration: underline; */
+}
+
+.main-content img {
+	display: block;
+	padding: 4px;
+	line-height: 20px;
+	border: 1px solid #ddd;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055);
+	-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055);
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055);
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+
+.post-meta {
+	color: #a2a2a2;
+	font-size: 11px;
+	border-bottom: 1px solid #dedede;
+	min-height: 20px;
+	height: auto;
+	overflow: auto;
+	clear: both;
+}
+
+.post-meta .categories {
+	margin-bottom: 0px;
+}
+
+.post-meta .categories a {
+	color: #a2a2a2;
+}
+
+.post-meta .categories a:hover {
+	color: #ccc;
+	text-decoration: none;
+}
+
+.more-btn {
+	float: right;
+	position: absolute;
+	right: 13px;
+	color: #a2a2a2;
+	font-size: 11px;
+	bottom: -3px;
+}
+
+.excerpt-more {
+	right: 26px;
+}
+
+.post-meta .tags {
+	margin-bottom: 0px;
+	float: left;
+	height: auto;
+	overflow: auto;
+	width: 89%;
+}
+
+.post-meta .tags-title {
+	color: #000;
+}
+
+.post-meta .tags a {
+	color: #a2a2a2;
+}
+
+.post-meta .tags a:hover {
+	color: #ccc;
+	text-decoration: none;
+}
+
+/* Post Content - Single */
+ul.post-social-single {
+	list-style-type: none;
+	margin: 0;
+	overflow: visible;
+}
+
+ul.post-social-single li{
+	float: left;
+	margin-top: 10px;
+	margin-right: 5px;
+}
+
+#comments {
+	overflow: auto;
+	margin-top: 20px;
+}
+
+/* Archives */
+.archive-head h1 {
+	margin: 0px;
+	font-weight: normal;
+	font-size: 24px;
+}
+
+.archive-text-content {
+	width: 74%;
+	float: right;
+}
+
+.archive-thumbnail {
+	width: 24%;
+	-moz-box-sizing:border-box; /* Firefox */
+	-webkit-box-sizing:border-box; /* Safari */
+	box-sizing:border-box;
+}
+
+.archive-thumbnail img {
+	width: 100%;
+}
+
+.wp-caption-text {
+	background: #e8e8e8;
+	border: 1px solid #a4a4a4;
+	font-size: 12px;
+	margin-top: 5px;
+	margin-right: 10px;
+	padding: 5px;
+	border-radius: 4px;
+	line-height: 15px;
+	-moz-box-sizing:border-box; /* Firefox */
+	-webkit-box-sizing:border-box; /* Safari */
+	box-sizing:border-box;
+}
+
+/* Search */
+h1.search-title {
+	margin: 0px;
+	font-weight: normal;
+	font-size: 24px;
+}
+
+/* Sidebar */
+
+aside .widget {
+	background-color: #fff;
+	border: 1px solid #dedede;
+	border-top-width: 0px;
+	border-radius: 5px 5px 0px 0px;
+	margin-bottom: 10px;
+}
+
+aside .widget_search {
+	background-color: #f6f6f6;
+	background-color: transparent;
+	border: 0px;
+}
+
+aside .widget_search input[type="text"] {
+	margin-bottom: 0px;
+}
+
+aside form {
+	margin: 0px;
+}
+
+h2.sidebar, aside .widget h4 {
+	font-size: 16px;
+	line-height: 35px;
+	background-color: #e8e8e8;
+	color: #a4a4a4;
+	font-weight: normal;
+	padding: 0px 10px 0px 10px;
+	clear: both;
+	margin: 0px;
+	border: 1px solid #dedede;
+	text-shadow: 1px 0px 0px #fff;
+	border-radius: 5px 5px 0px 0px;
+}
+
+.widget h4 {
+	text-transform: uppercase;
+}
+
+aside a {
+	color: #363636;
+	font-size: 14px;
+}
+
+aside a:hover {
+	color: #000000;
+	text-decoration: none;
+}
+
+aside ul, aside .textwidget {
+	list-style-type: none;
+	margin: 5px 10px;
+}
+
+p.sidebar a, aside .widget ul a {
+	color: #363636;
+}
+
+aside .widget ul li {
+	margin-bottom: 5px;
+}
+
+.widget_search {
+	margin-top: 10px;
+}
+
+aside input#s {
+	width: 82%;
+	height: 40px;
+	-moz-box-sizing:border-box; /* Firefox */
+	-webkit-box-sizing:border-box; /* Safari */
+	box-sizing:border-box;
+}
+
+aside input#searchsubmit {
+	width: 16%;
+	float: right;
+	height: 40px;
+	background: url('images/glyphicons_027_search.png') center center no-repeat;
+	-moz-box-sizing:border-box; /* Firefox */
+	-webkit-box-sizing:border-box; /* Safari */
+	box-sizing:border-box;
+	border: 0px;
+	background-color: none;
+}
+
+.screen-reader-text {
+	display: none;
+}
+
+/* Author Box */
+.author-box {
+	clear: both;
+	width: 100%;
+	margin: 20px 0px;
+	padding: 20px;
+	background-color: #e8e8e8;
+	border: 1px solid #a4a4a4;
+	-moz-box-sizing:border-box; /* Firefox */
+	-webkit-box-sizing:border-box; /* Safari */
+	box-sizing:border-box;
+}
+
+.author-content {
+	width: 78%;
+	float: right;
+	display: inline-block;
+}
+	.author-content h4 {
+		margin: 0px;
+	}
+	.author-content .author-desc {
+		margin: 10px 0px;
+	}
+	.author-content .also-by {
+		margin-top: 10px;
+	}
+	.author-content .also-by ul.more-author {
+		list-style-type: none;
+		margin: 10px 0px;
+	}
+	.author-content .also-by ul.more-author li {
+		line-height: 1.5em;
+	}
+
+.author-image {
+	width: 20%;
+	float: left;
+	background: #fff;
+	-moz-box-sizing:border-box; /* Firefox */
+	-webkit-box-sizing:border-box; /* Safari */
+	box-sizing:border-box;
+}
+
+.author-image img {
+	width: 100%;
+}
+
+/* Footer */
+
+.footer {
+	border-top: 1px solid #181818;
+	border-bottom: 1px solid #181818;
+	background: #282828; /* Old browsers */
+	background: -moz-linear-gradient(top,  #282828 69%, #232323 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(69%,#282828), color-stop(100%,#232323)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #282828 69%,#232323 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #282828 69%,#232323 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #282828 69%,#232323 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #282828 69%,#232323 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#282828', endColorstr='#232323',GradientType=0 ); /* IE6-9 */
+	color: #fff;
+	position: relative;
+	clear: both;
+}
+
+.inner-footer {
+	padding: 20px 0px 20px 0px;
+}
+
+.footer .row-fluid a {
+	color: #fff;
+}
+
+.footer .widget {
+	margin-bottom: 20px;
+}
+
+.footer .widget h4 {
+	font-size: 24px;
+	line-height: 24px;
+	margin: 0px;
+	font-weight: normal;
+	margin-bottom: 10px;
+}	
+
+.footer .widget ul {
+	list-style-type: none;
+	margin: 0px;
+}
+
+.footer .widget li a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.footer .widget li a:hover {
+	color: #ccc;
+	border-bottom: 1px solid #ccc;
+}
+
+.copyright {
+	/* margin-top: 100px; */
+}
+/* Content adjustments */
+
+/* Wordpress img alignment */
+img.aligncenter {
+	display: block;
+	margin: 0 auto;
+}
+img.alignright {
+	padding: 4px;
+	margin: 0 0 2px 7px;
+	display: inline;
+}
+img.alignleft {
+	padding: 4px;
+	margin: 0 7px 2px 0;
+	display: inline;
+}
+.alignright {
+	float: right;
+}
+.alignleft {
+	float: left;
+}
+
+/* Wordpress Gallery */
+dl {
+	float: left;
+	margin-right: 20px;
+}
+
+.gallery {
+	overflow: auto;
+}
+
+/* iframe video adjustment */
+.video-container {
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 30px;
+	height: 0;
+	overflow: hidden;
+}
+
+.video-container iframe,  
+.video-container object,  
+.video-container embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.main-content div {
+	max-width: 100%;
+}
+
+.main-content img {
+	-moz-box-sizing:border-box; /* Firefox */
+	-webkit-box-sizing:border-box; /* Safari */
+	box-sizing:border-box;
+}
+
+.main-content p {
+	word-wrap: break-word;
+}
+
+/* Form field */
+.form-field {
+	clear: both;
+	-moz-box-sizing:border-box; /* Firefox */
+	-webkit-box-sizing:border-box; /* Safari */
+	box-sizing:border-box;
+}
+
+/* Pagination */
+.pagination {
+	position: relative;
+}
+
+/* Quick fixes */
+.margin-top {
+	margin-top: 20px;
+}
+
+.pos-rel {
+	position: relative;
+}
+
+.clearfix {
+	width: 100%;
+	clear: both;
+}
+
+/* NGG Gallery */
+
+.ngg-imagebrowser h3 {
+	display: none;
+}
+
+.ngg-imagebrowser-anchor {
+	height: 20px;
+}
+
+.ngg-imagebrowser .ngg-imagebrowser-desc {
+	background-color: #e8e8e8;
+	color: #000;
+	padding: 20px;
+	clear: both;
+	margin: 20px 0px 0px 0px;
+	border: 1px solid #dedede;
+	-moz-box-sizing:border-box; /* Firefox */
+	-webkit-box-sizing:border-box; /* Safari */
+	box-sizing:border-box;
+	/* text-shadow: 1px 0px 0px #fff; */
+}
+
+.ngg-imagebrowser-nav .next, .ngg-imagebrowser-nav .back {
+	border: 0px !important;
+}
+
+/* Embedded Tweet */
+iframe.twitter-tweet {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.twitter-btn {
+	width: 76px;
+}
+
+.google-ads {
+	text-align: center;
+/*
+	width: 100%;
+	background: #fff;
+	border: 1px solid #dedede;
+	padding: 20px 0px 15px;
+*/
+}
+
+.google-footer-ads {
+	text-align: center;
+	margin: 20px 0px;
+}
+
+.uptop-ad {
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+/* Media Queries */
+
+@media (max-width: 979px) {
+	.navbar-inverse .brand, .navbar-inverse .nav > li > a.brand {
+		display: block;
+	}
+	/*
+.banner-overlap {
+		margin-top: -150px;
+	}
+*/
+	.description {
+		font-size: 14px;
+	}
+	.content-wrap .container {
+		padding: 0px;
+	}
+}
+
+@media (max-width: 767px) {
+	.featured-posts-bar {
+		display: none;
+	}
+	.banner-overlap {
+		margin-top: -250px;
+	}
+}
+
+@media (max-device-width: 480px) {
+	body {
+		font-size: .8em;
+	}
+	.banner-overlap {
+		margin-top: -250px;
+	}
+	.logo {
+		padding: 10px 0px;
+	}
+	.description {
+		font-size: 10px;
+		bottom: 7px;
+	}
+	
+	.content-wrap .container {
+		padding: 0px;
+	}
+	
+	.post-content > h2, .post-title {
+		font-size: 1.2em;
+		line-height: 1.1em;
+	}
+	
+	.main-content {
+		line-height: 1.4em;
+	}
+}
+
+@media 
+(-webkit-min-device-pixel-ratio: 2), 
+(min-resolution: 192dpi) { 
+    /* Retina-specific stuff here */
+}
